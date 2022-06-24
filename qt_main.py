@@ -14,7 +14,7 @@ from homepage import ui_mainwindow
     def showPopup(self):  # 重写showPopup函数
         self.clicked.emit()  # 发送信号        
         super(MyComboBox, self).showPopup()   # 调用父类的showPopup()'''
-
+#Abs comment
 
 class MyMainForm(QMainWindow, ui_mainwindow.Ui_MainWindow):
     log_signal = QtCore.pyqtSignal(str, str)  # log显示数据信号，第一个str为显示内容，第二个str为字体颜色
